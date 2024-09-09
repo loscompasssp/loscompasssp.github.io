@@ -40,6 +40,10 @@ header{
 
 /* Header */
 
+body{
+    background-color: white;
+}
+
 body>section{
     position: relative;
     z-index: 1000;
