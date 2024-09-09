@@ -1,0 +1,293 @@
+/* inicio */
+#inicio{
+    /* background: linear-gradient(to right, rgb(56, 56, 56) 60%, rgb(0, 0, 0));
+    color: white;
+    height: 100vh; */
+    height: 100%
+}
+
+#incio-titulo{
+    align-items: center;
+}
+
+#contenedor-texto{
+    color: white;
+    text-shadow: black 1px 1px 3px;
+    width: 70;
+}
+
+#inicio h1{
+    font-family: "Rubik Dirt", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    background-color: rgba(38, 38, 38, 0.889);
+    font-size: 2.7rem;
+}
+
+#inicio .d-flex{
+    height: 100%;
+    width: 100%;
+}
+
+header{
+    height: 45vh;
+    background-image: url(img/start-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* Header */
+
+body>section{
+    position: relative;
+    z-index: 1000;
+}
+
+.navbar{
+    font-size: 1.2rem;
+}
+
+.navbar-toggler{
+    border: 2px solid white;
+}
+
+#los-compas-logo {
+    width: 65px;
+}
+
+.navbar-collapse{
+    flex-grow: 0;
+}
+
+.nav-link{
+    transition: none;
+}
+
+
+.navbar-nav{
+    margin-right:  3vw;
+    text-align: center;
+    
+}
+
+.navbar-nav * {
+    margin: 0 0.5vw;
+
+    
+}
+
+.contenedor-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#menu{
+    text-shadow: none;
+    font-weight: bold;
+}
+
+
+/* Main content */
+
+
+.introduccion{
+    width: 75%;
+    margin: 10vh auto 9vh auto;
+}
+
+
+#logo_compas{
+    width: 35% !important;
+}
+
+.d-flex{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.start-info-item{
+    border: solid rgba(0, 0, 0, 0.281) 1px;
+    padding: 1.5vw 1.3vw;
+    border-radius: 20px;
+}
+.start-info-item:first-child{
+    margin: 0 0 3vh 0;
+}
+
+
+
+.introduccion i{
+    font-size: 4.5rem;
+    color: rgb(87, 168, 255);
+
+}
+
+#carrucel-contenedor{
+    margin-top: 15vh !important;
+    
+}
+
+.carrucel-contenedor img{
+    object-fit: scale-down;
+    object-position: center;
+    max-height: 100%;
+}
+
+
+.accion{
+    margin: 11% auto !important;
+}
+
+
+
+/* .carousel-control-next-icon, .carousel-control-prev-icon{
+    background-color: rgb(0, 0, 0);
+    padding: 10%;
+    
+} */
+
+
+/* footer */
+
+
+#background{
+    background-image: url(img/cooking-delicious-top-view-of-pizza-on-a-textured-gray-background-concept_9925164.jpg!w700wp.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    color: white
+}
+
+#papel-rasgado{
+    background-image: url(img/recorte.png);
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 20vh;
+    position: absolute;
+    top: -50px;
+
+}
+
+
+.quote-container{
+    color: white;
+    padding: 5% 5%;
+    margin: auto;
+    margin-bottom: 10vh;
+
+    /* background-color: rgb(27, 27, 27); */
+}
+
+
+.border-quote-container{
+    border-left: 2px solid rgb(255, 255, 255) !important;
+    background-color: rgba(255, 255, 255, 0.155);
+    max-width: 70%;
+}
+
+#quote-inline-container {
+    width: 95% !important;
+    text-align: justify;
+}
+
+#quote{
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+#about-us{
+    background-color: rgba(38, 38, 38, 0.365);
+    padding-bottom: 8%;
+}
+
+#about-us h2{
+    font-family: "Rubik Dirt", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    padding: 3% 1% 1% 1%;
+    font-size: 2.7rem;
+}
+
+
+.texto-cabecera-informacion{
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+}
+
+#texto-los-compas{
+    font-size: 2.2rem !important;
+}
+
+.contactos i{
+    color: rgb(23, 255, 23);
+}
+
+
+
+
+
+/* Estados */
+
+.navbar-nav li:nth-child(2) :hover  {
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+}
+
+
+body>section{
+    position: sticky;
+    top: 0;
+}
+
+/* media query */
+/* Si la pantalla es grande */
+@media screen and (min-width: 768px){
+    #carrucel-contenedor{
+        max-width: 50%;
+    }
+
+}
+
+/* Si la pantalla es pequeña */
+@media screen and (max-width: 768px){
+    .navbar-nav *:nth-child(2){
+        margin: 2.5% 0 3vh 0.5vw;
+    }
+
+    #quote-inline-container{
+        width: 85% !important;
+        
+    }
+
+    #logo_compas{
+        width: 90% !important
+    }
+
+    .accion{
+        margin: 15vh auto !important;
+    }
+    
+
+    .quote-container{
+        padding: 20% 5% 10% 5% !important;
+
+    }
+
+    .border-quote-container{
+        max-width: 100%;
+    }
+
+    .contactos{
+        flex-direction: column !important;
+
+    }
+    .contactos > div{
+        margin-bottom: 20% !important;
+    }
+}
